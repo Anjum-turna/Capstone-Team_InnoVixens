@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+/* Optional: Add any custom global styles here if needed */
+/* For example, custom fonts, scrollbar styles, etc. */
+
+/* Example custom font (common for Bangla support in HelloMed) */
+@font-face {
+  font-family: 'Hind Siliguri';
+  src: url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap');
+}
+
+/* Apply a nice default font stack (system + Bangla-friendly) */
+@theme {
+  --font-family-sans: "Hind Siliguri", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Ensure full height and smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
